@@ -1,0 +1,55 @@
+<section class="skills section section--invert" id="skills">
+  <span class="gutter-label">§ 05 — Stack</span>
+
+  <div class="shell skills-shell">
+    <header class="skills-head" [appReveal]="0">
+      <span class="eyebrow">Tools of the trade</span>
+      <h2 class="display-md">
+        The <span class="italic-accent">moving parts</span> behind the work.
+      </h2>
+      <p class="lede">
+        A rolling inventory of the languages, frameworks and habits I lean on
+        every day — paused on hover.
+      </p>
+    </header>
+  </div>
+
+  @if (portfolio$ | async; as data) {
+    <div class="strips" role="list">
+      @for (cat of data.skills; track cat.category; let i = $index) {
+        <div
+          class="strip"
+          [class.strip--reverse]="i % 2 === 1"
+          [appReveal]="i * 50"
+          role="listitem"
+        >
+          <span class="strip-label">
+            <span class="strip-num">0{{ i + 1 }}</span>
+            {{ cat.category }}
+          </span>
+          <div class="strip-track" aria-hidden="false">
+            <ul class="strip-row">
+              @for (item of cat.items; track item.name) {
+                <li class="skill-token" [attr.data-level]="item.level">
+                  <span class="skill-dot" aria-hidden="true"></span>
+                  <span class="skill-name">{{ item.name }}</span>
+                  <span class="skill-meta">{{ levelLabel(item.level) }}</span>
+                </li>
+              }
+            </ul>
+            <!-- Duplicate for seamless loop -->
+            <ul class="strip-row" aria-hidden="true">
+              @for (item of cat.items; track item.name) {
+                <li class="skill-token" [attr.data-level]="item.level">
+                  <span class="skill-dot" aria-hidden="true"></span>
+                  <span class="skill-name">{{ item.name }}</span>
+                  <span class="skill-meta">{{ levelLabel(item.level) }}</span>
+                </li>
+              }
+            </ul>
+          </div>
+        </div>
+      }
+    </div>
+  }
+</section>

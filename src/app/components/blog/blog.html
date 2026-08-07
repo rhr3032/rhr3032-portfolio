@@ -1,0 +1,93 @@
+<section class="blog section" id="blog">
+  <span class="gutter-label">§ 06 — Writing</span>
+
+  <div class="shell blog-shell">
+    @if (portfolio$ | async; as data) {
+      @if (data.blog && data.blog.length > 0) {
+        <header class="blog-head" [appReveal]="0">
+          <div>
+            <span class="eyebrow">Long-form</span>
+            <h2 class="display-md">
+              Notes from <span class="italic-accent">the desk.</span>
+            </h2>
+          </div>
+          @if (data.personal.social.medium) {
+            <a
+              [href]="data.personal.social.medium"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="blog-all"
+            >
+              All on Medium
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M7 17L17 7M17 7H8M17 7v9"/>
+              </svg>
+            </a>
+          }
+        </header>
+
+        <!-- Featured (first) post — magazine treatment -->
+        @if (data.blog[0]; as featured) {
+          <a
+            class="featured"
+            [href]="featured.mediumUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            [appReveal]="0"
+          >
+            <div class="featured-meta">
+              <span class="featured-tag">Featured · Latest</span>
+              <span class="featured-rule" aria-hidden="true"></span>
+              <span class="featured-date">{{ formatDate(featured.date) }}</span>
+              @if (featured.readingTime) {
+                <span class="featured-read">{{ featured.readingTime }}</span>
+              }
+            </div>
+            <h3 class="featured-title">
+              {{ featured.title }}
+            </h3>
+            <p class="featured-excerpt">{{ featured.summary }}</p>
+            <span class="featured-cta">
+              Read the piece
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </a>
+        }
+
+        <!-- Remaining posts as editorial list -->
+        @if (data.blog.length > 1) {
+          <ol class="post-list" role="list">
+            @for (post of data.blog.slice(1); track post.title; let i = $index) {
+              <li [appReveal]="i * 60">
+                <a
+                  class="post"
+                  [href]="post.mediumUrl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="post-date">{{ formatDate(post.date) }}</span>
+                  <span class="post-body">
+                    <h4 class="post-title">{{ post.title }}</h4>
+                    <p class="post-summary">{{ post.summary }}</p>
+                  </span>
+                  <span class="post-meta">
+                    @if (post.readingTime) {
+                      <span class="post-read">{{ post.readingTime }}</span>
+                    }
+                    <span class="post-arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M7 17L17 7M17 7H8M17 7v9"/>
+                      </svg>
+                    </span>
+                  </span>
+                </a>
+              </li>
+            }
+          </ol>
+        }
+      }
+    }
+  </div>
+</section>

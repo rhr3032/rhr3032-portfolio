@@ -1,0 +1,231 @@
+{
+  "personal": {
+    "name": "Raisul Rafi",
+    "title": "Lead UX/UI Designer & Frontend Developer",
+    "tagline": "I don't just build screens, I craft user experiences.",
+    "bio": "I am a passionate and versatile Lead UX/UI Designer and Frontend Developer with over 5+ years of experience in creating intuitive and visually stunning digital experiences. With a strong foundation in both design principles and frontend technologies, I excel at bridging the gap between aesthetics and functionality. My expertise lies in crafting user-centered designs that not only captivate users but also drive business success. I thrive in collaborative environments, working closely with cross-functional teams to deliver innovative solutions that exceed client expectations. Whether it's designing engaging interfaces or implementing responsive web applications, I am dedicated to delivering exceptional results that leave a lasting impact.",
+    "email": "rhr3032@yahoo.com",
+    "location": "Barishal, Bangladesh",
+    "avatar": "/public/avater.jpg",
+    "social": {
+      "github": "https://github.com/rhr3032",
+      "linkedin": "https://linkedin.com/in/rhr3032",
+      "behance": "https://behance.net/rhr3032",
+      "pinterest": "https://pinterest.com/rhr3032",
+      "twitter": "https://twitter.com/rhr3032",
+      "instagram": "https://instagram.com/rhr3032"
+    }
+  },
+  "experience": [
+    {
+      "company": "MNTech Digital",
+      "companyUrl": "https://mntechdigital.com",
+      "role": "Lead UX/UI Designer",
+      "startDate": "Feb, 2025",
+      "endDate": null,
+      "description": "Led a team of designers to create intuitive interfaces, resulting in a 30% increase in user engagement and a 25% boost in customer satisfaction. Collaborated closely with product managers and developers to ensure seamless integration of design and functionality, delivering a cohesive and impactful user experience.",
+      "highlights": [
+        "Spearheaded the redesign of the flagship product, leading to a 30% increase in user engagement and a 25% boost in customer satisfaction",
+        "Led a team of designers to create intuitive interfaces, resulting in a 30% increase in user engagement and a 25% boost in customer satisfaction"
+      ],
+      "technologies": ["Figma", "Next.js", "Flutter"]
+    },
+   {
+      "company": "Ramotion",
+      "companyUrl": "https://ramotion.com",
+      "role": "UX/UI Designer",
+      "startDate": "Apr, 2023",
+      "endDate": "Dec,2024",
+      "description": "Contributed to the design and development of cutting-edge applications for the E&P sector, leveraging Angular and React to create seamless user experiences. Implemented innovative features such as AI-driven summarization tools and real-time 3D wellbore analysis components, resulting in enhanced reporting efficiency and interactive visualizations for stakeholders.",
+      "highlights": [
+        "Contributed to the design and development of cutting-edge applications for the E&P sector, leveraging Angular and React to create seamless user experiences",
+        "Implemented innovative features such as AI-driven summarization tools and real-time 3D wellbore analysis components, resulting in enhanced reporting efficiency and interactive visualizations for stakeholders",
+        "Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction"
+      ],
+      "technologies": ["Angular", "React", "TailwindCSS", "C#", "WebGL (Unity)"]
+    },
+       {
+      "company": "UpWork",
+      "companyUrl": "https://upwork.com",
+      "role": "UX/UI Designer (Freelance)",
+      "startDate": "Jun, 2022",
+      "endDate": "Dec, 2024",
+      "highlights": [
+        "Led the design and development of a high-impact Angular-based web application for a major Well company, resulting in a 30% improvement in operational efficiency and a 20% reduction in logistics-related costs",
+        "Successfully integrated cutting-edge features and technologies, leading to a 20% reduction in logistics-related costs and delivering a 25% increase in customer satisfaction through enhanced tracking and real-time updates",
+        "Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction"
+      ],
+      "technologies": ["Figma", "Next.js", "Flutter"]
+    },
+    {
+      "company": "Fiverr",
+      "companyUrl": "https://fiverr.com",
+      "role": "UX/UI Designer (Freelance)",
+      "startDate": "Jul, 2021",
+      "endDate": "Mar, 2023",
+      "highlights": [
+        "Designed and developed a high-performance product website for Jain Laboratories Ltd, achieving load times of less than 3 seconds and significantly enhancing user experience",
+        "Leveraged Figma for design and prototyping, facilitating seamless collaboration with design and development teams, and reducing initial development time by 30%-40%",
+        "Played a pivotal role in developing an Angular-based Web-based Point of Sales (POS) application, facilitating seamless transactions and inventory management with a notable 25% increase in checkout speed"
+      ],
+      "technologies": ["Figma", "Next.js", "Flutter"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Patuakhali Govt. University College",
+      "degree": "BA (Hon's) in Department of English",
+      "location": "Patuakhali, Bangladesh",
+      "endDate": "2021-2022"
+    },
+    {
+      "institution": "Coursera / Google",
+      "degree": "Google UX Design Certificate",
+      "location": "Online",
+      "endDate": "2024"
+    },
+    {
+      "institution": "IDEO U",
+      "degree": "Advanced Product Strategy",
+      "location": "Online",
+      "endDate": "2024"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        { "name": "Angular", "level": "expert" },
+        { "name": "React", "level": "proficient" },
+        { "name": "TypeScript", "level": "expert" },
+        { "name": "TailwindCSS", "level": "expert" },
+        { "name": "Ionic", "level": "proficient" },
+        { "name": "RxJS", "level": "expert" }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        { "name": "NestJS", "level": "proficient" },
+        { "name": "NodeJS", "level": "proficient" },
+        { "name": "C#", "level": "proficient" },
+        { "name": "PostgresSQL", "level": "proficient" },
+        { "name": "MongoDB", "level": "proficient" }
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": [
+        { "name": "Azure DevOps", "level": "proficient" },
+        { "name": "Docker", "level": "proficient" },
+        { "name": "GitHub Actions", "level": "proficient" },
+        { "name": "Cloudflare Page", "level": "proficient" },
+        { "name": "Figma", "level": "proficient" },
+        { "name": "Railway", "level": "proficient" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "rhr3032",
+      "description": "Personal portfolio website built with Angular 21 and deployed on Cloudflare Workers. You're looking at it right now!",
+      "technologies": ["Angular", "TypeScript", "Tailwind CSS", "Cloudflare Workers"],
+      "url": "https://rhr3032.dev",
+      "github": "https://github.com/rhr3032/rhr3032",
+      "featured": true
+    },
+    {
+      "name": "Side Project 2",
+      "description": "A description of your side project goes here. Update this in portfolio.json or your Gist.",
+      "technologies": ["Angular", "Node.js", "MongoDB"],
+      "url": "",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Side Project 3",
+      "description": "A description of your side project goes here. Update this in portfolio.json or your Gist.",
+      "technologies": ["React", "TypeScript", "PostgreSQL"],
+      "url": "",
+      "github": "",
+      "featured": false
+    }
+  ],
+  "blog": [
+    {
+      "title": "Getting Started with Angular Signals",
+      "mediumUrl": "https://medium.com/@rhr3032",
+      "date": "2025-10-01",
+      "summary": "A practical guide to Angular Signals — the new reactivity primitive replacing Zone.js change detection in modern Angular applications.",
+      "readingTime": "6 min read"
+    },
+    {
+      "title": "Deploying Angular Apps to Cloudflare Workers",
+      "mediumUrl": "https://medium.com/@rhr3032",
+      "date": "2025-08-15",
+      "summary": "Step-by-step walkthrough of deploying an Angular SSR application to Cloudflare Workers using @angular/ssr and Wrangler.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "Mastering RxJS in Angular",
+      "mediumUrl": "https://medium.com/@rhr3032",
+      "date": "2025-05-20",
+      "summary": "Deep dive into the RxJS operators every Angular developer should know, with real-world examples from production codebases.",
+      "readingTime": "10 min read"
+    }
+  ],
+  "activities": [
+    {
+      "organization": "SOFTYSTA — Global UI/UX & Development Agency",
+      "role": "Director of UX (Creative and Business Strategy)",
+      "duration": "2025 – Present",
+      "highlights": [
+        "Spearheaded the development of a comprehensive UX strategy that resulted in a 30% increase in client satisfaction and a 25% boost in project success rates.",
+        "Led a team of UX designers and researchers to deliver innovative solutions, contributing to a 20% growth in agency revenue and a 15% expansion of the client base.",
+        "Implemented a user-centered design approach that improved project delivery timelines by 20% and enhanced the overall quality of deliverables, leading to a 10% increase in repeat business."
+      ]
+    },
+     {
+      "organization": "NUYsDev — Global Development Agency",
+      "role": "CEO & Founder",
+      "duration": "2019 – Present",
+      "highlights": [
+        "Spearheaded the development of a comprehensive UX strategy that resulted in a 30% increase in client satisfaction and a 25% boost in project success rates.",
+        "Led a team of UX designers and researchers to deliver innovative solutions, contributing to a 20% growth in agency revenue and a 15% expansion of the client base.",
+        "Implemented a user-centered design approach that improved project delivery timelines by 20% and enhanced the overall quality of deliverables, leading to a 10% increase in repeat business."
+      ]
+    },
+    {
+      "organization": "NUYsDZ!N — Global UI/UX Design Agency",
+      "role": "CEO & Founder",
+      "duration": "2019 – Present",
+      "highlights": [
+        "Spearheaded the development of a comprehensive UX strategy that resulted in a 30% increase in client satisfaction and a 25% boost in project success rates.",
+        "Led a team of UX designers and researchers to deliver innovative solutions, contributing to a 20% growth in agency revenue and a 15% expansion of the client base.",
+        "Implemented a user-centered design approach that improved project delivery timelines by 20% and enhanced the overall quality of deliverables, leading to a 10% increase in repeat business."
+      ]
+    }
+  ],
+  "talks": [
+    {
+      "title": "Prepare for your career: Ultimate Guide to Kickstart Your Journey",
+      "event": "DIU CPC, Dhaka International University",
+      "year": 2025,
+      "role": "Speaker"
+    },
+    {
+      "title": "Expectation vs Reality in Bangladesh's Software Job Market",
+      "event": "DIU CSE Department",
+      "year": 2024,
+      "role": "Guest Speaker"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Designing Utility: A User-Centered Approach to Interface Design",
+      "publisher": "NUYsDev ft. NUYsDZ!N — Global UI/UX & Development Agency",
+      "year": 2019,
+      "hashnodeUrl": "https://hashnode.com/"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<section class="edu section" id="education">
+  <span class="gutter-label">§ 03 — Schooling</span>
+
+  <div class="shell edu-shell">
+    @if (portfolio$ | async; as data) {
+      @if (data.education && data.education.length > 0) {
+        <div class="edu-head" [appReveal]="0">
+          <span class="eyebrow">Education</span>
+          <h2 class="display-md">
+            Academic qualifications <span class="italic-accent">and certifications</span>
+          </h2>
+        </div>
+
+        <div class="ribbon" [appReveal]="100">
+          <div class="ribbon-line" aria-hidden="true">
+            <span class="ribbon-tick ribbon-tick--start"></span>
+            <span class="ribbon-fill"></span>
+            <span class="ribbon-tick ribbon-tick--end"></span>
+          </div>
+
+          <ol class="ribbon-list" role="list">
+            @for (edu of data.education; track edu.institution; let i = $index) {
+              <li class="bead">
+                <span class="bead-year">{{ formatYear(edu.endDate) }}</span>
+                <span class="bead-dot" aria-hidden="true"></span>
+                <div class="bead-body">
+                  <h3 class="bead-degree">{{ edu.degree }}</h3>
+                  <p class="bead-meta">
+                    <span class="bead-inst">{{ edu.institution }}</span>
+                    <span class="bead-sep">·</span>
+                    <span>{{ edu.location }}</span>
+                  </p>
+                </div>
+              </li>
+            }
+          </ol>
+        </div>
+      }
+    }
+  </div>
+</section>

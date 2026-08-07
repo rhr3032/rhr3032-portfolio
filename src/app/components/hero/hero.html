@@ -1,0 +1,92 @@
+<section
+  class="hero"
+  id="hero"
+  [style.--mx.%]="pointer().x"
+  [style.--my.%]="pointer().y"
+>
+  <!-- Animated gradient mesh background -->
+  <div class="hero-mesh" aria-hidden="true">
+    <span class="blob blob--a"></span>
+    <span class="blob blob--b"></span>
+    <span class="blob blob--c"></span>
+    <span class="hero-spotlight"></span>
+  </div>
+
+  <div class="shell hero-shell">
+    @if (portfolio$ | async; as data) {
+      <!-- Top meta row -->
+      <div class="hero-meta">
+        <span class="status-pill"><span class="dot"></span>Available Now</span>
+        <span class="kicker hero-clock">{{ clock() }}</span>
+      </div>
+
+      <!-- Editorial body: name on the left, vertical role ticker on the right -->
+      <div class="hero-body">
+        <div class="hero-name-block">
+          <p class="kicker hero-greeting">Hello, I'm</p>
+          <h1 class="display-xl hero-name">
+            <span class="hero-name-line">{{ firstName(data.personal.name) }}</span>
+            <span class="hero-name-line hero-name-line--last">
+              {{ lastName(data.personal.name) }}<span class="italic-accent">.</span>
+            </span>
+          </h1>
+        </div>
+
+        <aside class="hero-rail" aria-hidden="true">
+          <span class="rail-caption">Currently</span>
+          <div class="rail-ticker">
+            <ul
+              class="rail-stack"
+              [style.--stack-offset]="'-' + (activeRoleIndex() * 1.4) + 'em'"
+            >
+              @for (role of roles; track role) {
+                <li class="rail-item">{{ role }}</li>
+              }
+            </ul>
+          </div>
+          <span class="rail-line"></span>
+        </aside>
+      </div>
+
+      <!-- Footer row: tagline + actions + scroll cue -->
+      <div class="hero-foot">
+        <p class="hero-tagline">
+          <span class="hero-tagline-mark">“</span>
+          {{ data.personal.tagline }}
+          <span class="hero-tagline-mark">”</span>
+        </p>
+
+        <div class="hero-actions">
+          <a
+            class="btn btn--primary"
+            href="#projects"
+            [appMagnetic]="6"
+            (click)="scrollTo('#projects', $event)"
+          >
+            See selected work
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a
+            class="btn btn--ghost"
+            href="/resume-of-rafi.pdf"
+            (click)="downloadResume($event)"
+            aria-label="Download résumé"
+          >
+            Résumé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </a>
+        </div>
+
+        <a class="hero-scroll" href="#about" (click)="scrollTo('#about', $event)" aria-label="Scroll to next section">
+          <span class="hero-scroll-label">Scroll</span>
+          <span class="hero-scroll-line" aria-hidden="true"></span>
+        </a>
+      </div>
+    }
+  </div>
+</section>

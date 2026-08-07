@@ -1,0 +1,60 @@
+<header class="nav-shell" [class.is-scrolled]="scrolled()">
+  <div class="nav-pill">
+    <a class="nav-mark" href="#hero" (click)="scrollTo('#hero', $event)" aria-label="Raisul R — home">
+      <span class="mark-glyph">R</span>
+      <span class="mark-text">RHR</span>
+      <span class="mark-cursor" aria-hidden="true">_</span>
+    </a>
+
+    <nav class="nav-rail" aria-label="Section navigation">
+      @for (link of links; track link.href) {
+        <a
+          class="nav-rail-link"
+          [class.is-active]="activeSection() === link.href.slice(1)"
+          [href]="link.href"
+          (click)="scrollTo(link.href, $event)"
+        >
+          <span class="rail-dot" aria-hidden="true"></span>
+          <span class="rail-label">{{ link.label }}</span>
+        </a>
+      }
+    </nav>
+
+    <div class="nav-tools">
+      <button
+        class="hamburger"
+        type="button"
+        (click)="toggleMobile()"
+        [attr.aria-expanded]="mobileOpen()"
+        aria-label="Toggle menu"
+      >
+        <span class="bar" [class.is-open-1]="mobileOpen()"></span>
+        <span class="bar" [class.is-open-2]="mobileOpen()"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile sheet -->
+  <div class="mobile-backdrop" [class.is-visible]="mobileOpen()" (click)="toggleMobile()" aria-hidden="true"></div>
+  <nav class="mobile-sheet" [class.is-open]="mobileOpen()" [attr.aria-hidden]="!mobileOpen()">
+    <p class="mobile-eyebrow">Index</p>
+    <ul>
+      @for (link of links; track link.href; let i = $index) {
+        <li>
+          <a
+            class="mobile-link"
+            [class.is-active]="activeSection() === link.href.slice(1)"
+            [href]="link.href"
+            (click)="scrollTo(link.href, $event)"
+          >
+            <span class="mobile-num">0{{ i + 1 }}</span>
+            <span>{{ link.label }}</span>
+          </a>
+        </li>
+      }
+    </ul>
+    <div class="mobile-foot">
+      <span class="status-pill"><span class="dot"></span>Available · 2026</span>
+    </div>
+  </nav>
+</header>

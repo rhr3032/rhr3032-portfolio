@@ -1,0 +1,77 @@
+<section class="exp section section--invert" id="experience">
+  <span class="gutter-label">§ 02 — Career</span>
+
+  <div class="shell exp-shell">
+    <header class="exp-head" [appReveal]="0">
+      <span class="eyebrow">Selected work history</span>
+      <h2 class="display-md">
+        Five years &amp; counting — building <span class="italic-accent">at the seam</span>
+        of design, code, and people.
+      </h2>
+    </header>
+
+    @if (portfolio$ | async; as data) {
+      <ol class="timeline" role="list">
+        @for (exp of data.experience; track exp.company + exp.startDate; let i = $index, last = $last) {
+          <li class="row" [class.row--current]="isCurrentRole(exp)" [appReveal]="i * 60">
+            <!-- Sticky year label -->
+            <div class="row-year" aria-hidden="true">
+              <span class="year-marker"></span>
+              <span class="year-num">{{ formatYear(exp.startDate) }}</span>
+              <span class="year-sub">{{ duration(exp.startDate, exp.endDate) }}</span>
+            </div>
+
+            <!-- Body -->
+            <article class="row-body">
+              <div class="row-top">
+                <div class="row-id">
+                  <span class="row-num">0{{ i + 1 }}</span>
+                  @if (isCurrentRole(exp)) {
+                    <span class="row-now">
+                      <span class="now-dot"></span>Currently
+                    </span>
+                  }
+                </div>
+                <span class="row-range">{{ formatRange(exp.startDate, exp.endDate) }}</span>
+              </div>
+
+              <h3 class="row-role">
+                {{ exp.role }}
+                <span class="row-at"> at </span>
+                @if (exp.companyUrl) {
+                  <a class="row-company" [href]="exp.companyUrl" target="_blank" rel="noopener noreferrer">
+                    {{ exp.company }}
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                      <path d="M7 17L17 7M17 7H8M17 7v9"/>
+                    </svg>
+                  </a>
+                } @else {
+                  <span class="row-company row-company--plain">{{ exp.company }}</span>
+                }
+              </h3>
+
+              @if (exp.description) {
+                <p class="row-desc">{{ exp.description }}</p>
+              }
+
+              <ul class="row-points">
+                @for (h of exp.highlights; track h) {
+                  <li>
+                    <span class="point-rule" aria-hidden="true"></span>
+                    <span>{{ h }}</span>
+                  </li>
+                }
+              </ul>
+
+              <div class="row-tech">
+                @for (t of exp.technologies; track t) {
+                  <span class="chip">{{ t }}</span>
+                }
+              </div>
+            </article>
+          </li>
+        }
+      </ol>
+    }
+  </div>
+</section>

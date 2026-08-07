@@ -1,0 +1,100 @@
+<section class="beyond section" id="beyond">
+  <span class="gutter-label">§ 07 — Beyond</span>
+
+  <div class="shell beyond-shell">
+    <header class="beyond-head" [appReveal]="0">
+      <span class="eyebrow">Off the clock</span>
+      <h2 class="display-md">
+        Community, talks &amp; <span class="italic-accent">research traces.</span>
+      </h2>
+    </header>
+
+    @if (portfolio$ | async; as data) {
+      <!-- Activities -->
+      @if (data.activities && data.activities.length > 0) {
+        <article class="stack stack--left" [appReveal]="0">
+          <aside class="stack-side" aria-hidden="true">
+            <span class="stack-label">Leadership · Activities</span>
+          </aside>
+          <div class="stack-body">
+            @for (activity of data.activities; track activity.organization; let i = $index) {
+              <div class="entry" [appReveal]="i * 60">
+                <div class="entry-head">
+                  <span class="entry-num">A.0{{ i + 1 }}</span>
+                  <span class="entry-when">{{ activity.duration }}</span>
+                </div>
+                <h3 class="entry-title">
+                  {{ activity.role }}
+                  <span class="entry-at"> — </span>
+                  <span class="entry-org">{{ activity.organization }}</span>
+                </h3>
+                <ul class="entry-points">
+                  @for (h of activity.highlights; track h) {
+                    <li><span class="point-rule"></span><span>{{ h }}</span></li>
+                  }
+                </ul>
+              </div>
+            }
+          </div>
+        </article>
+      }
+
+      <!-- Talks -->
+      @if (data.talks && data.talks.length > 0) {
+        <article class="stack stack--right" [appReveal]="0">
+          <aside class="stack-side" aria-hidden="true">
+            <span class="stack-label">Talks · Speaking</span>
+          </aside>
+          <div class="stack-body">
+            @for (talk of data.talks; track talk.title; let i = $index) {
+              <div class="entry entry--row" [appReveal]="i * 60">
+                <span class="entry-year">{{ talk.year }}</span>
+                <div class="entry-line"></div>
+                <div class="entry-content">
+                  <h3 class="entry-title entry-title--sm">{{ talk.title }}</h3>
+                  <p class="entry-meta">
+                    <span class="entry-role">{{ talk.role }}</span>
+                    <span class="entry-sep">·</span>
+                    <span>{{ talk.event }}</span>
+                  </p>
+                </div>
+              </div>
+            }
+          </div>
+        </article>
+      }
+
+      <!-- Publications -->
+      @if (data.publications && data.publications.length > 0) {
+        <article class="stack stack--left" [appReveal]="0">
+          <aside class="stack-side" aria-hidden="true">
+            <span class="stack-label">Publications · Research</span>
+          </aside>
+          <div class="stack-body">
+            @for (pub of data.publications; track pub.hashnodeUrl; let i = $index) {
+              <div class="entry entry--pub" [appReveal]="i * 60">
+                <div class="entry-head">
+                  <span class="entry-num">P.0{{ i + 1 }}</span>
+                  <span class="entry-when">{{ pub.year }}</span>
+                </div>
+                <h3 class="entry-title entry-title--sm">{{ pub.title }}</h3>
+                <p class="entry-meta">{{ pub.publisher }}</p>
+                <a
+                  [href]="hashnodeUrl(pub.hashnodeUrl)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="entry-link"
+                >
+                  hashnode.com/
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M7 17L17 7M17 7H8M17 7v9"/>
+                  </svg>
+                </a>
+              </div>
+            }
+          </div>
+        </article>
+      }
+    }
+  </div>
+</section>

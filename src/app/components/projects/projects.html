@@ -1,0 +1,170 @@
+<section class="projects section" id="projects">
+  <span class="gutter-label">§ 04 — Projects</span>
+
+  <div class="shell projects-head-shell">
+    <header class="proj-head" >
+      <div>
+        <span class="eyebrow">Selected projects</span>
+        <h2 class="display-md">
+          Things I’ve made <span class="italic-accent">on the side</span> —
+          mostly to scratch an itch.
+        </h2>
+      </div>
+
+      @if (portfolio$ | async; as data) {
+        <div class="proj-controls">
+          <span class="proj-counter" [attr.aria-live]="'polite'">{{ counter() }}</span>
+          <div class="proj-arrows">
+            <button
+              type="button"
+              class="arrow"
+              (click)="scrollByCard(-1)"
+              [disabled]="activeIndex() === 0"
+              aria-label="Previous project"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 5l-7 7 7 7"/>
+              </svg>
+            </button>
+            <button
+              type="button"
+              class="arrow"
+              (click)="scrollByCard(1)"
+              [disabled]="activeIndex() >= featuredCount() - 1"
+              aria-label="Next project"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      }
+    </header>
+  </div>
+
+  @if (portfolio$ | async; as data) {
+    <!-- Featured projects: horizontal snap rail -->
+    <div
+      #rail
+      class="rail"
+      (scroll)="onRailScroll($event)"
+      (pointerdown)="onPointerDown($event)"
+      [attr.aria-label]="'Featured projects, ' + featuredCount() + ' items'"
+      role="region"
+      tabindex="0"
+    >
+      <div class="rail-pad rail-pad--start" aria-hidden="true"></div>
+
+      @for (project of data.projects ?? []; track project.name) {
+        @if (project.featured) {
+          <article class="panel">
+            <div class="panel-media">
+              @if (project.image) {
+                <img [src]="project.image" [alt]="project.name" loading="lazy" />
+              } @else {
+                <div class="panel-placeholder" aria-hidden="true">
+                  <span class="panel-placeholder-glyph">{{ project.name.charAt(0) }}</span>
+                </div>
+              }
+              <span class="panel-badge">Featured</span>
+            </div>
+
+            <div class="panel-body">
+              <p class="panel-kicker">
+                {{ project.technologies[0] }}
+                <span class="panel-kicker-sep">/</span>
+                Case study
+              </p>
+              <h3 class="panel-title display-md">{{ project.name }}</h3>
+              <p class="panel-desc">{{ project.description }}</p>
+
+              <div class="panel-tech">
+                @for (tech of project.technologies; track tech) {
+                  <span class="chip">{{ tech }}</span>
+                }
+              </div>
+
+              <div class="panel-actions">
+                @if (project.url) {
+                  <a
+                    class="panel-link"
+                    [href]="project.url"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    (click)="onCardClick($event)"
+                  >
+                    Visit live
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M7 17L17 7M17 7H8M17 7v9"/>
+                    </svg>
+                  </a>
+                }
+                @if (project.github) {
+                  <a
+                    class="panel-link panel-link--ghost"
+                    [href]="project.github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    (click)="onCardClick($event)"
+                  >
+                    Source
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                  </a>
+                }
+              </div>
+            </div>
+          </article>
+        }
+      }
+
+      <div class="rail-pad rail-pad--end" aria-hidden="true"></div>
+    </div>
+
+    <!-- Drag hint -->
+    <div class="shell rail-hint">
+      <span class="rail-hint-line" aria-hidden="true"></span>
+      <span class="rail-hint-text">Drag · Scroll · ←/→</span>
+    </div>
+
+    <!-- Compact list of remaining projects -->
+    @if (hasNonFeatured(data.projects)) {
+      <div class="shell more-shell">
+        <div class="more-head" >
+          <span class="eyebrow">Also worth a look</span>
+          <span class="kicker">{{ nonFeaturedCount(data.projects) }} more</span>
+        </div>
+
+        <ul class="more-list" role="list">
+          @for (project of data.projects ?? []; track project.name) {
+            @if (!project.featured) {
+              <li class="more-item">
+                <a
+                  class="more-link"
+                  [href]="project.url || project.github || '#'"
+                  [attr.target]="(project.url || project.github) ? '_blank' : null"
+                  rel="noopener noreferrer"
+                >
+                  <span class="more-name">{{ project.name }}</span>
+                  <span class="more-desc">{{ project.description }}</span>
+                  <span class="more-meta">
+                    @for (tech of project.technologies.slice(0, 3); track tech) {
+                      <span class="chip">{{ tech }}</span>
+                    }
+                  </span>
+                  <span class="more-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M7 17L17 7M17 7H8M17 7v9"/>
+                    </svg>
+                  </span>
+                </a>
+              </li>
+            }
+          }
+        </ul>
+      </div>
+    }
+  }
+</section>

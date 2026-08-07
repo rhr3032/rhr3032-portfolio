@@ -1,0 +1,92 @@
+<section class="about section" id="about">
+  <span class="gutter-label">§ 01 — About</span>
+
+  <div class="shell about-shell">
+    @if (portfolio$ | async; as data) {
+      <header class="about-head" [appReveal]="0">
+        <span class="eyebrow">The human</span>
+        <h2 class="display-md about-headline">
+          Focused on <span class="italic-accent">product strategy,</span>
+          accessible interfaces across web and mobile.
+        </h2>
+      </header>
+
+      <div class="about-body">
+        <!-- Prose column -->
+        <article class="about-prose" [appReveal]="100">
+          <p class="dropcap">{{ data.personal.bio }}</p>
+          <ul class="about-meta">
+            <li>
+              <span class="meta-label">Based</span>
+              <span class="meta-value">{{ data.personal.location }}</span>
+            </li>
+            <li>
+              <span class="meta-label">Role</span>
+              <span class="meta-value">{{ data.personal.title }}</span>
+            </li>
+            <li>
+              <span class="meta-label">Status</span>
+              <span class="meta-value meta-value--accent">Open to projects</span>
+            </li>
+          </ul>
+        </article>
+
+        <!-- Visual column: portrait + signature mark -->
+        <aside class="about-visual" [appReveal]="200">
+          <figure class="portrait">
+            @if (data.personal.avatar) {
+              <img
+                [src]="data.personal.avatar"
+                [alt]="data.personal.name"
+                loading="lazy"
+                referrerpolicy="no-referrer"
+              />
+            } @else {
+              <div class="portrait-fallback">
+                <span>{{ initials(data.personal.name) }}</span>
+              </div>
+            }
+            <figcaption class="portrait-cap">
+              <span>Lead UIUX Designer</span>
+              <span>{{ data.personal.name }} | {{ data.personal.location.split(',')[0] }}</span>
+            </figcaption>
+          </figure>
+
+          <div class="signature" aria-hidden="true">
+            <svg viewBox="0 0 200 60" preserveAspectRatio="none">
+              <path
+                d="M5,40 C30,5 60,55 90,30 C120,5 150,55 195,25"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Pull quote -->
+      <blockquote class="pull-quote" [appReveal]="200">
+        <span class="quote-mark">“</span>
+        <p class="display-md">
+          {{ data.personal.tagline }}
+        </p>
+        <footer class="quote-foot">
+          <span class="quote-rule"></span>
+          <span>— {{ firstName(data.personal.name) }}, on the job</span>
+        </footer>
+      </blockquote>
+
+      <!-- Stats strip -->
+      <ul class="stats-strip" [appReveal]="0">
+        @for (stat of stats; track stat.label; let i = $index) {
+          <li class="stat" [appReveal]="i * 80">
+            <span class="stat-num">{{ stat.value }}</span>
+            <span class="stat-label">{{ stat.label }}</span>
+          </li>
+        }
+      </ul>
+    }
+  </div>
+</section>

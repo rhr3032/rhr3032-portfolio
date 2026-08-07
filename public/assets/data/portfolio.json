@@ -1,0 +1,451 @@
+{
+  "personal": {
+    "name": "Raisul Rafi",
+    "title": "Lead UX/UI Designer & Frontend Developer",
+    "tagline": "I don't just build screens, I craft user experiences.",
+    "bio": "I am a passionate and versatile Lead UX/UI Designer and Frontend Developer with over 5+ years of experience in creating intuitive and visually stunning digital experiences. With a strong foundation in both design principles and frontend technologies, I excel at bridging the gap between aesthetics and functionality. My expertise lies in crafting user-centered designs that not only captivate users but also drive business success. I thrive in collaborative environments, working closely with cross-functional teams to deliver innovative solutions that exceed client expectations. Whether it's designing engaging interfaces or implementing responsive web applications, I am dedicated to delivering exceptional results that leave a lasting impact.",
+    "email": "rhr3032@yahoo.com",
+    "location": "Barishal, Bangladesh",
+    "avatar": "/avatar.jpg",
+    "social": {
+      "github": "https://github.com/rhr3032",
+      "linkedin": "https://linkedin.com/in/rhr3032",
+      "behance": "https://behance.net/rhr3032",
+      "pinterest": "https://pinterest.com/rhr3032",
+      "twitter": "https://x.com/rhr_raisulrafi",
+      "instagram": "https://instagram.com/nuysdev"
+    }
+  },
+  "experience": [
+    {
+      "company": "MNTech Digital",
+      "companyUrl": "https://mntechdigital.com",
+      "role": "Lead UX/UI Designer",
+      "startDate": "Feb, 2025",
+      "endDate": null,
+      "description": "Led a team of designers to create intuitive interfaces, resulting in a 30% increase in user engagement and a 25% boost in customer satisfaction. Collaborated closely with product managers and developers to ensure seamless integration of design and functionality, delivering a cohesive and impactful user experience.",
+      "highlights": [
+        "Spearheaded the redesign of the flagship product, leading to a 30% increase in user engagement and a 25% boost in customer satisfaction",
+        "Led a team of designers to create intuitive interfaces, resulting in a 30% increase in user engagement and a 25% boost in customer satisfaction"
+      ],
+      "technologies": ["Figma", "Sketch", "Miro", "Notion", "Adobe Creative Suite", "Framer"]
+    },
+    {
+      "company": "Ramotion",
+      "companyUrl": "https://ramotion.com",
+      "role": "UX/UI Designer (Remote)",
+      "startDate": "Apr, 2023",
+      "endDate": "Dec,2024",
+      "description": "Contributed to the design and development of cutting-edge applications for the E&P sector, leveraging Angular and React to create seamless user experiences. Implemented innovative features such as AI-driven summarization tools and real-time 3D wellbore analysis components, resulting in enhanced reporting efficiency and interactive visualizations for stakeholders.",
+      "highlights": [
+        "Contributed to the design and development of cutting-edge applications for the E&P sector, leveraging Angular and React to create seamless user experiences",
+        "Implemented innovative features such as AI-driven summarization tools and real-time 3D wellbore analysis components, resulting in enhanced reporting efficiency and interactive visualizations for stakeholders",
+        "Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction"
+      ],
+      "technologies": ["Figma", "Framer", "Next.js", "Flutter", "Python", "Adobe Creative Suite"]
+    },
+    {
+      "company": "UpWork",
+      "companyUrl": "https://upwork.com",
+      "role": "UX/UI Designer (Freelance)",
+      "startDate": "Jun, 2022",
+      "endDate": "Dec, 2024",
+      "highlights": [
+        "Led the design and development of a high-impact Angular-based web application for a major Well company, resulting in a 30% improvement in operational efficiency and a 20% reduction in logistics-related costs",
+        "Successfully integrated cutting-edge features and technologies, leading to a 20% reduction in logistics-related costs and delivering a 25% increase in customer satisfaction through enhanced tracking and real-time updates",
+        "Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction"
+      ],
+      "technologies": ["Figma", "Sketch", "Miro", "Adobe Creative Suite", "Framer"]
+    },
+    {
+      "company": "Fiverr",
+      "companyUrl": "https://fiverr.com",
+      "role": "UX/UI Designer (Freelance)",
+      "startDate": "Jul, 2021",
+      "endDate": "Mar, 2023",
+      "highlights": [
+        "Designed and developed a high-performance product website for Jain Laboratories Ltd, achieving load times of less than 3 seconds and significantly enhancing user experience",
+        "Leveraged Figma for design and prototyping, facilitating seamless collaboration with design and development teams, and reducing initial development time by 30%-40%",
+        "Played a pivotal role in developing an Angular-based Web-based Point of Sales (POS) application, facilitating seamless transactions and inventory management with a notable 25% increase in checkout speed"
+      ],
+      "technologies": ["Figma", "Sketch", "Miro", "Adobe Creative Suite", "Framer", "WordPress"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Patuakhali Govt. University College",
+      "degree": "BA (Hon's) in Department of English",
+      "location": "Patuakhali, Bangladesh",
+      "endDate": "2026"
+    },
+    {
+      "institution": "Coursera / Google",
+      "degree": "Google UX Design Certificate",
+      "location": "Online",
+      "endDate": "2024"
+    },
+    {
+      "institution": "IDEO U",
+      "degree": "Advanced Product Strategy",
+      "location": "Online",
+      "endDate": "2024"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        { "name": "Next.js", "level": "expert" },
+        { "name": "React", "level": "proficient" },
+        { "name": "TypeScript", "level": "expert" },
+        { "name": "TailwindCSS", "level": "expert" },
+        { "name": "Ionic", "level": "proficient" },
+        { "name": "RxJS", "level": "expert" },
+        { "name": "Angular", "level": "expert" },
+        { "name": "Flutter", "level": "proficient" },
+        { "name": "Svelte", "level": "proficient" },
+        { "name": "Vue", "level": "proficient" },
+        { "name": "WordPress", "level": "proficient" },
+        { "name": "Framer", "level": "expert" },
+        { "name": "Figma", "level": "expert" },
+        { "name": "Sketch", "level": "expert" },
+        { "name": "Miro", "level": "expert" },
+        { "name": "Adobe Creative Suite", "level": "expert" },
+        { "name": "InVision", "level": "expert" },
+        { "name": "Zeplin", "level": "expert" },
+        { "name": "Marvel", "level": "expert" },
+        { "name": "Balsamiq", "level": "expert" },
+        { "name": "Axure RP", "level": "expert" },
+        { "name": "UXPin", "level": "expert" },
+        { "name": "Proto.io", "level": "expert" },
+        { "name": "Justinmind", "level": "expert" },
+        { "name": "Origami Studio", "level": "expert" },
+        { "name": "Principle", "level": "expert" },
+        { "name": "Flinto", "level": "expert" },
+        { "name": "Webflow", "level": "expert" },
+        { "name": "Gatsby", "level": "expert" },
+        { "name": "Nuxt.js", "level": "expert" },
+        { "name": "Gridsome", "level": "expert" },
+        { "name": "Eleventy", "level": "expert" }
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        { "name": "NestJS", "level": "expert" },
+        { "name": "NodeJS", "level": "expert" },
+        { "name": "C#", "level": "expert" },
+        { "name": "PostgresSQL", "level": "expert" },
+        { "name": "MongoDB", "level": "expert" },
+        { "name": "Firebase", "level": "expert" },
+        { "name": "Supabase", "level": "expert" },
+        { "name": "Python", "level": "expert" },
+        { "name": "Django", "level": "expert" },
+        { "name": "Flask", "level": "expert" },
+        { "name": "GraphQL", "level": "expert" },
+        { "name": "REST API", "level": "expert" },
+        { "name": "WebSocket", "level": "proficient" },
+        { "name": "Socket.IO", "level": "proficient" },
+        { "name": "gRPC", "level": "proficient" },
+        { "name": "RabbitMQ", "level": "proficient" },
+        { "name": "Redis", "level": "proficient" }
+      ]
+    },
+    {
+      "category": "Tools",
+      "items": [
+        { "name": "Azure DevOps", "level": "proficient" },
+        { "name": "Docker", "level": "proficient" },
+        { "name": "GitHub Actions", "level": "proficient" },
+        { "name": "Cloudflare Page", "level": "proficient" },
+        { "name": "Figma", "level": "expert" },
+        { "name": "Railway", "level": "expert" },
+        { "name": "Vercel", "level": "expert" },
+        { "name": "Netlify", "level": "expert" },
+        { "name": "Heroku", "level": "expert" },
+        { "name": "AWS", "level": "expert" },
+        { "name": "Google Cloud Platform", "level": "expert" },
+        { "name": "Azure", "level": "expert" },
+        { "name": "Cloudflare Workers", "level": "proficient" },
+        { "name": "Nginx", "level": "proficient" },
+        { "name": "Apache", "level": "proficient" },
+        { "name": "Linux", "level": "expert" },
+        { "name": "Windows Server", "level": "proficient" },
+        { "name": "Kubernetes", "level": "proficient" },
+        { "name": "Terraform", "level": "proficient" },
+        { "name": "Ansible", "level": "proficient" },
+        { "name": "Jenkins", "level": "proficient" },
+        { "name": "Travis CI", "level": "proficient" },
+        { "name": "CircleCI", "level": "proficient" },
+        { "name": "GitLab CI/CD", "level": "proficient" },
+        { "name": "Azure Pipelines", "level": "proficient" },
+        { "name": "Bitbucket Pipelines", "level": "proficient" },
+        { "name": "TeamCity", "level": "proficient" },
+        { "name": "Bamboo", "level": "proficient" },
+        { "name": "Octopus Deploy", "level": "proficient" },
+        { "name": "Argo CD", "level": "proficient" },
+        { "name": "Spinnaker", "level": "proficient" },
+        { "name": "Flux", "level": "proficient" },
+        { "name": "GitOps", "level": "proficient" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Oslofjordens Friluftsråd",
+      "description": "Led development of a state-of-the-art Angular website, emphasizing scalability, modularity, optimization, and top-tier security. Delivered an impressive 80%+ performance improvement over the previous solution. Managed seamless integration of vital features (SEO, Internationalization, Accessibility) driving a remarkable 230% sales surge in one year. Implemented MapBox, elevating user engagement by 400% via Google Analytics. Streamlined booking checkout with Nets Easy Payment API, enhancing user experience.",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": true
+    },
+    
+    {
+      "name": "Bonik POS",
+      "description": "Played a pivotal role in developing an Angular-based Web-based Point of Sales (POS) application, facilitating seamless transactions and inventory management with a notable 25% increase in checkout speed. Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": true
+    },
+    
+    {
+      "name": "SILENCE ERP",
+      "description": "Played a pivotal role in developing a cutting-edge Angular-based Enterprise Resource Planning (ERP) solution, streamlining business processes and fostering a 25% increase in overall operational efficiency. Successfully integrated diverse modules, including finance, inventory, and human resources, resulting in a 30% reduction in manual data entry and a 40% improvement in data accuracy, significantly enhancing decision-making capabilities for the organization.",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": true
+    },
+    
+    {
+      "name": "Jain Laboratories",
+      "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": true
+    },
+    {
+      "name": "Jain Laboratories",
+      "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": true
+    },
+    {
+      "name": "AURA TRAVEL Mobile App UI Design",
+      "description": "Designed a mobile app UI for AURA TRAVEL, a travel agency, using Figma. The design focused on creating an intuitive and visually appealing user interface to enhance the user experience.",
+      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "url": "https://www.behance.net/gallery/249093991/AURA-TRAVEL-Mobile-App-UI-Design",
+      "github": "https://www.behance.net/gallery/249093991/AURA-TRAVEL-Mobile-App-UI-Design",
+      "featured": false
+    },
+    {
+      "name": "Petition Landing Page UI Design",
+      "description": "Designed a modern and responsive landing page for a petition campaign using Figma and Adobe Photoshop. The design emphasized clear messaging, strong call-to-action buttons, and an engaging user interface to maximize conversion rates.",
+      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "url": "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
+      "github": "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
+      "featured": false
+    },
+    {
+      "name": "TopShop Online Groceries App UI Design",
+      "description": "Designed a user-friendly and visually appealing UI for TopShop, an online groceries app, using Figma and Adobe Photoshop. The design focused on creating an intuitive shopping experience with easy navigation, clear product categorization, and a seamless checkout process.",
+      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "url": "https://www.behance.net/gallery/234089065/Online-Groceries-App-UI-Design",
+      "github": "https://www.behance.net/gallery/234089065/Online-Groceries-App-UI-Design",
+      "featured": false
+    },
+    {
+      "name": "Agencysta Digital Marketing Agency Website",
+      "description": "Designed a modern and visually appealing website for Agencysta, a digital marketing agency, using Figma and Adobe Photoshop. The design focused on showcasing the agency's services, portfolio, and client testimonials in an engaging and user-friendly manner to attract potential clients.",
+      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "url": "https://www.behance.net/gallery/233137419/Next-Generation-Digital-Marketing-Agency-Website",
+      "github": "https://www.behance.net/gallery/233137419/Next-Generation-Digital-Marketing-Agency-Website",
+      "featured": false
+    },
+    {
+      "name": "RideShare Mobile App UI kit",
+      "description": "Designed a modern and responsive UI kit for the RideShare mobile app using Figma and Adobe Photoshop. The design focused on creating an intuitive user experience with seamless navigation, engaging animations, and a consistent visual language to enhance user satisfaction and retention.",
+      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "url": "https://www.behance.net/gallery/229018819/RideShare-Mobile-App-UI-kit",
+      "github": "https://www.behance.net/gallery/229018819/RideShare-Mobile-App-UI-kit",
+      "featured": false
+    },
+    {
+      "name": "Jain Laboratories",
+      "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Jain Laboratories",
+      "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Jain Laboratories",
+      "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Jain Laboratories",
+      "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": false
+    },
+    {
+      "name": "Jomidar",
+      "description": "Developed and designed web application and mobile application, utilizing Angular and Ionic frameworks. Led the creation of the web application from scratch, while also crafting the UI design using Adobe XD. Leveraged expertise in Angular and Ionic to build both web and mobile components of the application, demonstrating a strong aptitude for front-end development and responsive design. Collaborated as a Junior Software Engineer, gaining valuable experience in software development lifecycle and UI/UX implementation.",
+      "technologies": ["Angular"],
+      "url": "",
+      "github": "",
+      "featured": false
+    }
+  ],
+  "blog": [
+    {
+      "title": "Prepare for Your Career: Ultimate Guide to Kickstart Your UI/UX Design Journey.",
+      "mediumUrl": "https://www.linkedin.com/pulse/prepare-your-career-ultimate-guide-kickstart-uiux-hasan-rafi-rql0c",
+      "date": "May 12, 2026",
+      "summary": "Embarking on a career in UI/UX design can be both exciting and daunting. This comprehensive guide is designed to help aspiring designers navigate the path to success, providing insights, tips, and resources to kickstart your journey in the world of user experience and interface design.",
+      "readingTime": "10 min read"
+    },
+    {
+      "title": "Prepare for Your Career: Ultimate Guide to AI-Driven UI/UX Designer.",
+      "mediumUrl": "https://www.linkedin.com/pulse/prepare-your-career-ultimate-guide-ai-driven-uiux-hasan-rafi-70ahc",
+      "date": "May 12, 2026",
+      "summary": "As the field of UI/UX design continues to evolve, the integration of Artificial Intelligence (AI) is becoming increasingly prevalent.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences.",
+      "mediumUrl": "https://medium.com/@rhr3032/the-art-of-cx-design-crafting-exceptional-customer-experiences-4199e3460e9e",
+      "date": "Jul 5, 2023",
+      "summary": "Customer Experience (CX) Design is the practice of designing and optimizing the overall experience that customers have with a brand, product, or service.",
+      "readingTime": "8 min read"
+    },
+    {
+      "title": "Different between “Product Designer” and “UI/UX Designer”.",
+      "mediumUrl": "https://medium.com/@rhr3032/different-between-product-designer-and-ui-ux-designer-32be54531b44",
+      "date": "Jul 5, 2023",
+      "summary": "Exploring the distinctions between Product Designers and UI/UX Designers in the modern design landscape.",
+      "readingTime": "10 min read"
+    }
+  ],
+  "activities": [
+    {
+      "organization": "SOFTYSTA — Global UI/UX & Development Agency",
+      "role": "Director of UX (Creative and Business Strategy)",
+      "duration": "2025 – Present",
+      "highlights": [
+        "Spearheaded the development of a comprehensive UX strategy that resulted in a 30% increase in client satisfaction and a 25% boost in project success rates.",
+        "Led a team of UX designers and researchers to deliver innovative solutions, contributing to a 20% growth in agency revenue and a 15% expansion of the client base.",
+        "Implemented a user-centered design approach that improved project delivery timelines by 20% and enhanced the overall quality of deliverables, leading to a 10% increase in repeat business."
+      ]
+    },
+    {
+      "organization": "NUYsDev — Global Development Agency",
+      "role": "CEO & Founder",
+      "duration": "2019 – Present",
+      "highlights": [
+        "Spearheaded the development of a comprehensive UX strategy that resulted in a 30% increase in client satisfaction and a 25% boost in project success rates.",
+        "Led a team of UX designers and researchers to deliver innovative solutions, contributing to a 20% growth in agency revenue and a 15% expansion of the client base.",
+        "Implemented a user-centered design approach that improved project delivery timelines by 20% and enhanced the overall quality of deliverables, leading to a 10% increase in repeat business."
+      ]
+    },
+    {
+      "organization": "NUYsDZ!N — Global UI/UX Design Agency",
+      "role": "CEO & Founder",
+      "duration": "2019 – Present",
+      "highlights": [
+        "Spearheaded the development of a comprehensive UX strategy that resulted in a 30% increase in client satisfaction and a 25% boost in project success rates.",
+        "Led a team of UX designers and researchers to deliver innovative solutions, contributing to a 20% growth in agency revenue and a 15% expansion of the client base.",
+        "Implemented a user-centered design approach that improved project delivery timelines by 20% and enhanced the overall quality of deliverables, leading to a 10% increase in repeat business."
+      ]
+    }
+  ],
+  "talks": [
+    {
+      "title": "The Future of UI/UX Design: Trends and Innovations",
+      "event": "SOFTYSTA — Global UI/UX & Development Agency",
+      "year": 2026,
+      "role": "Keynote Speaker"
+    },
+    {
+      "title": "Designing for the User: Best Practices in UX/UI",
+      "event": "SOFTYSTA — Global UI/UX & Development Agency",
+      "year": 2025,
+      "role": "Guest Speaker"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Designing Utility: A User-Centered Approach to Interface Design",
+      "publisher": "NUYsBlog — Global Blogs & Articles Publication (Tech & Creative)",
+      "year": 2026,
+      "hashnodeUrl": "https://nuysblog.hashnode.dev/nuysblog01"
+    }
+  ]
+}
