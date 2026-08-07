@@ -195,6 +195,7 @@
       "name": "Oslofjordens Friluftsråd",
       "description": "Led development of a state-of-the-art Angular website, emphasizing scalability, modularity, optimization, and top-tier security. Delivered an impressive 80%+ performance improvement over the previous solution. Managed seamless integration of vital features (SEO, Internationalization, Accessibility) driving a remarkable 230% sales surge in one year. Implemented MapBox, elevating user engagement by 400% via Google Analytics. Streamlined booking checkout with Nets Easy Payment API, enhancing user experience.",
       "technologies": ["Angular"],
+      "image": "/assets/projects/oslofjordens-friluftsrad.jpg",
       "url": "",
       "github": "",
       "featured": true
@@ -204,6 +205,7 @@
       "name": "Bonik POS",
       "description": "Played a pivotal role in developing an Angular-based Web-based Point of Sales (POS) application, facilitating seamless transactions and inventory management with a notable 25% increase in checkout speed. Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction",
       "technologies": ["Angular"],
+      "image": "/assets/projects/bonik-pos.jpg",
       "url": "",
       "github": "",
       "featured": true
@@ -213,6 +215,7 @@
       "name": "SILENCE ERP",
       "description": "Played a pivotal role in developing a cutting-edge Angular-based Enterprise Resource Planning (ERP) solution, streamlining business processes and fostering a 25% increase in overall operational efficiency. Successfully integrated diverse modules, including finance, inventory, and human resources, resulting in a 30% reduction in manual data entry and a 40% improvement in data accuracy, significantly enhancing decision-making capabilities for the organization.",
       "technologies": ["Angular"],
+      "image": "/assets/projects/silence-erp.jpg",
       "url": "",
       "github": "",
       "featured": true
@@ -222,6 +225,7 @@
       "name": "Jain Laboratories",
       "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jain-laboratories-featured-01.jpg",
       "url": "",
       "github": "",
       "featured": true
@@ -230,6 +234,7 @@
       "name": "Jain Laboratories",
       "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jain-laboratories-featured-02.jpg",
       "url": "",
       "github": "",
       "featured": true
@@ -238,6 +243,7 @@
       "name": "AURA TRAVEL Mobile App UI Design",
       "description": "Designed a mobile app UI for AURA TRAVEL, a travel agency, using Figma. The design focused on creating an intuitive and visually appealing user interface to enhance the user experience.",
       "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "image": "/assets/projects/aura-travel-mobile-app-ui-design.jpg",
       "url": "https://www.behance.net/gallery/249093991/AURA-TRAVEL-Mobile-App-UI-Design",
       "github": "https://www.behance.net/gallery/249093991/AURA-TRAVEL-Mobile-App-UI-Design",
       "featured": false
@@ -246,6 +252,7 @@
       "name": "Petition Landing Page UI Design",
       "description": "Designed a modern and responsive landing page for a petition campaign using Figma and Adobe Photoshop. The design emphasized clear messaging, strong call-to-action buttons, and an engaging user interface to maximize conversion rates.",
       "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "image": "/assets/projects/petition-landing-page-ui-design.jpg",
       "url": "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
       "github": "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
       "featured": false
@@ -254,6 +261,7 @@
       "name": "TopShop Online Groceries App UI Design",
       "description": "Designed a user-friendly and visually appealing UI for TopShop, an online groceries app, using Figma and Adobe Photoshop. The design focused on creating an intuitive shopping experience with easy navigation, clear product categorization, and a seamless checkout process.",
       "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "image": "/assets/projects/topshop-online-groceries-app-ui-design.jpg",
       "url": "https://www.behance.net/gallery/234089065/Online-Groceries-App-UI-Design",
       "github": "https://www.behance.net/gallery/234089065/Online-Groceries-App-UI-Design",
       "featured": false
@@ -262,6 +270,7 @@
       "name": "Agencysta Digital Marketing Agency Website",
       "description": "Designed a modern and visually appealing website for Agencysta, a digital marketing agency, using Figma and Adobe Photoshop. The design focused on showcasing the agency's services, portfolio, and client testimonials in an engaging and user-friendly manner to attract potential clients.",
       "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "image": "/assets/projects/agencysta-digital-marketing-agency-website.jpg",
       "url": "https://www.behance.net/gallery/233137419/Next-Generation-Digital-Marketing-Agency-Website",
       "github": "https://www.behance.net/gallery/233137419/Next-Generation-Digital-Marketing-Agency-Website",
       "featured": false
@@ -270,6 +279,7 @@
       "name": "RideShare Mobile App UI kit",
       "description": "Designed a modern and responsive UI kit for the RideShare mobile app using Figma and Adobe Photoshop. The design focused on creating an intuitive user experience with seamless navigation, engaging animations, and a consistent visual language to enhance user satisfaction and retention.",
       "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
+      "image": "/assets/projects/rideshare-mobile-app-ui-kit.jpg",
       "url": "https://www.behance.net/gallery/229018819/RideShare-Mobile-App-UI-kit",
       "github": "https://www.behance.net/gallery/229018819/RideShare-Mobile-App-UI-kit",
       "featured": false
@@ -278,6 +288,7 @@
       "name": "Jain Laboratories",
       "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jain-laboratories-01.jpg",
       "url": "",
       "github": "",
       "featured": false
@@ -286,6 +297,7 @@
       "name": "Jain Laboratories",
       "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jain-laboratories-02.jpg",
       "url": "",
       "github": "",
       "featured": false
@@ -294,6 +306,7 @@
       "name": "Jain Laboratories",
       "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jain-laboratories-03.jpg",
       "url": "",
       "github": "",
       "featured": false
@@ -302,6 +315,7 @@
       "name": "Jain Laboratories",
       "description": "Developed an interactive product showcasing website for Jain Laboratories Ltd, resulting in a significant increase in user engagement. Implemented the website using Angular, achieving an impressive loading time of less than 3 seconds, thereby enhancing the overall user experience and reducing the bounce rate by 40% than the previous website. Leveraged Figma to design and prototype the website, facilitating seamless collaboration with the design and development teams. Utilizing Tailwind CSS as the CSS library, reduced the initial development time by 30%-40%, leading to quicker project delivery",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jain-laboratories-04.jpg",
       "url": "",
       "github": "",
       "featured": false
@@ -310,6 +324,7 @@
       "name": "Jomidar",
       "description": "Developed and designed web application and mobile application, utilizing Angular and Ionic frameworks. Led the creation of the web application from scratch, while also crafting the UI design using Adobe XD. Leveraged expertise in Angular and Ionic to build both web and mobile components of the application, demonstrating a strong aptitude for front-end development and responsive design. Collaborated as a Junior Software Engineer, gaining valuable experience in software development lifecycle and UI/UX implementation.",
       "technologies": ["Angular"],
+      "image": "/assets/projects/jomidar.jpg",
       "url": "",
       "github": "",
       "featured": false

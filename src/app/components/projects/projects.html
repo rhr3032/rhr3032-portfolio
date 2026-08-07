@@ -60,8 +60,13 @@
         @if (project.featured) {
           <article class="panel">
             <div class="panel-media">
-              @if (project.image) {
-                <img [src]="project.image" [alt]="project.name" loading="lazy" />
+              @if (resolveImagePath(project.image); as imageSrc) {
+                <img
+                  [ngSrc]="imageSrc"
+                  [alt]="project.name"
+                  fill
+                  sizes="(max-width: 880px) 88vw, 42rem"
+                />
               } @else {
                 <div class="panel-placeholder" aria-hidden="true">
                   <span class="panel-placeholder-glyph">{{ project.name.charAt(0) }}</span>
@@ -147,6 +152,20 @@
                   [attr.target]="(project.url || project.github) ? '_blank' : null"
                   rel="noopener noreferrer"
                 >
+                  @if (resolveImagePath(project.image); as imageSrc) {
+                    <span class="more-thumb" aria-hidden="true">
+                      <img
+                        [ngSrc]="imageSrc"
+                        alt=""
+                        fill
+                        sizes="(max-width: 880px) 0px, 5.5rem"
+                      />
+                    </span>
+                  } @else {
+                    <span class="more-thumb more-thumb--fallback" aria-hidden="true">
+                      <span class="more-thumb-glyph">{{ project.name.charAt(0) }}</span>
+                    </span>
+                  }
                   <span class="more-name">{{ project.name }}</span>
                   <span class="more-desc">{{ project.description }}</span>
                   <span class="more-meta">

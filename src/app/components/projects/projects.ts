@@ -10,7 +10,7 @@ import {
   inject,
   signal,
 } from '@angular/core';
-import { AsyncPipe, isPlatformBrowser } from '@angular/common';
+import { AsyncPipe, isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { PortfolioService } from '../../services/portfolio.service';
 import { Project } from '../../models/portfolio.model';
@@ -20,7 +20,7 @@ const DRAG_CLICK_THRESHOLD_PX = 6;
 
 @Component({
   selector: 'app-projects',
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, NgOptimizedImage],
   templateUrl: './projects.html',
   styleUrl: './projects.css',
 })
@@ -139,6 +139,30 @@ export class Projects implements OnInit, OnDestroy {
 
   nonFeaturedCount(projects: Project[] | undefined): number {
     return (projects ?? []).filter((p) => !p.featured).length;
+  }
+
+  resolveImagePath(image?: string): string | null {
+    if (!image) return null;
+
+    const trimmed = image.trim();
+    if (!trimmed) return null;
+    if (/^(https?:)?\/\//.test(trimmed) || trimmed.startsWith('data:')) {
+      return trimmed;
+    }
+
+    let normalized = trimmed.replace(/\\/g, '/');
+    normalized = normalized.replace(/^\.\//, '');
+    normalized = normalized.replace(/^\//, '');
+
+    if (normalized.startsWith('public/')) {
+      normalized = normalized.slice('public/'.length);
+    }
+
+    if (normalized.startsWith('src/')) {
+      normalized = normalized.slice('src/'.length);
+    }
+
+    return `/${normalized}`;
   }
 }
 
