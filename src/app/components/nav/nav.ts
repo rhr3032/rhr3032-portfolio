@@ -75,10 +75,7 @@ export class Nav implements OnInit, OnDestroy {
     this.themeService.toggle();
   }
 
-  scrollTo(id: string, event: Event): void {
-    event.preventDefault();
+  closeMobile(): void {
     this.mobileOpen.set(false);
-    const el = this.isBrowser ? document.querySelector(id) : null;
-    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }

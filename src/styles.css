@@ -144,6 +144,7 @@ main { position: relative; z-index: 2; }
 .section {
   padding-block: var(--section-pad-y);
   position: relative;
+  scroll-margin-top: 7rem;
 }
 
 .section--invert {
