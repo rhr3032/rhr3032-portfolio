@@ -36,18 +36,33 @@
       </a>
 
       <div class="contact-actions" [appReveal]="240">
-        <a
-          class="btn btn--primary"
-          href="/resume-of-rafi.pdf"
-          (click)="downloadResume($event)"
-          [appMagnetic]="6"
-        >
-          Read Résumé
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
-            <polyline points="14 2 14 8 20 8"/>
-          </svg>
-        </a>
+        <div class="contact-actions-group">
+          <a
+            class="btn btn--primary"
+            href="/resume-of-rafi.pdf"
+            (click)="downloadResume($event)"
+            [appMagnetic]="6"
+          >
+            Read Résumé
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+          </a>
+
+          <button
+            class="back-top"
+            type="button"
+            (click)="scrollToTop()"
+            [appMagnetic]="6"
+            aria-label="Back to top"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true">
+              <path d="M12 19V5" />
+              <path d="M6 11l6-6 6 6" />
+            </svg>
+          </button>
+        </div>
 
         <ul class="socials">
           @if (data.personal.social.github) {

@@ -89,4 +89,9 @@ export class Contact implements OnInit, OnDestroy {
       window.location.href = path;
     }
   }
+
+  scrollToTop(): void {
+    if (!this.isBrowser) return;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
