@@ -1,4 +1,5 @@
 import {
+  AfterViewInit,
   Component,
   HostListener,
   OnDestroy,
@@ -21,7 +22,7 @@ interface NavLink {
   templateUrl: './nav.html',
   styleUrl: './nav.css',
 })
-export class Nav implements OnInit, OnDestroy {
+export class Nav implements OnInit, AfterViewInit, OnDestroy {
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   readonly themeService = inject(ThemeService);
 
@@ -38,33 +39,38 @@ export class Nav implements OnInit, OnDestroy {
   readonly mobileOpen = signal(false);
   readonly activeSection = signal<string>('hero');
 
-  #observer: IntersectionObserver | null = null;
+  #mutationObserver: MutationObserver | null = null;
 
   ngOnInit(): void {
+    this.syncViewportState();
+  }
+
+  ngAfterViewInit(): void {
     if (!this.isBrowser) return;
-    this.#observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            this.activeSection.set(entry.target.id);
-          }
-        }
-      },
-      { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
-    );
-    document
-      .querySelectorAll('section[id]')
-      .forEach((section) => this.#observer!.observe(section));
+
+    this.#mutationObserver = new MutationObserver(() => this.syncActiveSection());
+    this.#mutationObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: true,
+      attributeFilter: ['id'],
+    });
+
+    requestAnimationFrame(() => this.syncViewportState());
   }
 
   ngOnDestroy(): void {
-    this.#observer?.disconnect();
+    this.#mutationObserver?.disconnect();
   }
 
   @HostListener('window:scroll')
   onScroll(): void {
-    if (!this.isBrowser) return;
-    this.scrolled.set(window.scrollY > 24);
+    this.syncViewportState();
+  }
+
+  @HostListener('window:resize')
+  onResize(): void {
+    this.syncActiveSection();
   }
 
   toggleMobile(): void {
@@ -77,5 +83,35 @@ export class Nav implements OnInit, OnDestroy {
 
   closeMobile(): void {
     this.mobileOpen.set(false);
+  }
+
+  private syncViewportState(): void {
+    if (!this.isBrowser) return;
+
+    this.scrolled.set(window.scrollY > 24);
+    this.syncActiveSection();
+  }
+
+  private syncActiveSection(): void {
+    if (!this.isBrowser) return;
+
+    const sections = Array.from(document.querySelectorAll<HTMLElement>('section[id]'));
+    if (sections.length === 0) return;
+
+    const activationPoint = window.innerHeight * 0.4;
+    let nextSection = sections[0].id;
+
+    for (const section of sections) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= activationPoint) {
+        nextSection = section.id;
+      } else {
+        break;
+      }
+    }
+
+    if (nextSection !== this.activeSection()) {
+      this.activeSection.set(nextSection);
+    }
   }
 }
