@@ -3,6 +3,7 @@
 .contact {
   --line: rgba(244, 241, 234, 0.14);
   --line-strong: rgba(244, 241, 234, 0.32);
+  padding-top: clamp(5rem, 10vw, 9rem);
   padding-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 

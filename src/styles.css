@@ -300,16 +300,17 @@ main { position: relative; z-index: 2; }
 /* ── Section side label (rotated gutter caption) ─────────────── */
 .gutter-label {
   position: absolute;
-  top: var(--section-pad-y);
+  top: calc(var(--section-pad-y) + clamp(2rem, 4vw, 4rem));
   left: calc(var(--shell-pad-x) - 0.5rem);
   font-family: var(--font-mono);
   font-size: 0.68rem;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.45em;
   text-transform: uppercase;
   color: var(--text-muted);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   transform-origin: left top;
+  line-height: 1.9;
 }
 @media (max-width: 900px) { .gutter-label { display: none; } }
 

@@ -42,20 +42,21 @@
 .stack-label {
   font-family: var(--font-mono);
   font-size: 0.74rem;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.45em;
   text-transform: uppercase;
   color: var(--text-muted);
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   white-space: nowrap;
   border-left: 1px solid var(--line);
-  padding-left: 1rem;
+  padding-left: 1.35rem;
+  line-height: 1.9;
 }
 .stack--right .stack-label {
   border-left: none;
   border-right: 1px solid var(--line);
   padding-left: 0;
-  padding-right: 1rem;
+  padding-right: 1.35rem;
 }
 
 /* Body */
