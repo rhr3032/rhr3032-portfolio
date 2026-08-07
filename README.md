@@ -2,7 +2,7 @@
 
 Personal portfolio website for Raisul Rafi, a Lead UX/UI Designer & Frontend Developer. The site presents selected work, experience, education, skills, and contact details in a polished editorial layout built with Angular.
 
-Live site: https://rhr3032.vercel.app/
+Live site: <a href="https://rhr3032.vercel.app/" target="_blank" rel="noopener noreferrer">https://rhr3032.vercel.app/</a>
 
 ## About Me
 
@@ -74,7 +74,7 @@ src/
 
 ## Follow Me On
 
-- Instagram: https://instagram.com/nuysdev
+- Instagram: https://instagram.com/rhr.raisulrafi
 - LinkedIn: https://linkedin.com/in/rhr3032
 - Behance: https://behance.net/rhr3032
 - Email: mailto:rhr3032@yahoo.com
