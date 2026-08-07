@@ -22,6 +22,27 @@
 
     <div class="nav-tools">
       <button
+        class="theme-toggle"
+        type="button"
+        (click)="toggleTheme()"
+        [attr.aria-label]="themeService.theme() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'"
+        [attr.aria-pressed]="themeService.theme() === 'dark'"
+      >
+        <span class="theme-toggle__icon" [class.is-dark]="themeService.theme() === 'dark'">
+          <span class="theme-toggle__sun" aria-hidden="true">
+            <span class="sun-core"></span>
+            <span class="sun-ray sun-ray--1"></span>
+            <span class="sun-ray sun-ray--2"></span>
+            <span class="sun-ray sun-ray--3"></span>
+            <span class="sun-ray sun-ray--4"></span>
+          </span>
+          <span class="theme-toggle__moon" aria-hidden="true">
+            <span class="moon-disc"></span>
+            <span class="moon-shadow"></span>
+          </span>
+        </span>
+      </button>
+      <button
         class="hamburger"
         type="button"
         (click)="toggleMobile()"

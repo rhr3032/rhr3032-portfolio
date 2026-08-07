@@ -8,6 +8,7 @@ import {
   signal,
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { ThemeService } from '../../services/theme.service';
 
 interface NavLink {
   label: string;
@@ -22,6 +23,7 @@ interface NavLink {
 })
 export class Nav implements OnInit, OnDestroy {
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
+  readonly themeService = inject(ThemeService);
 
   readonly links: NavLink[] = [
     { label: 'Index', href: '#hero' },
@@ -67,6 +69,10 @@ export class Nav implements OnInit, OnDestroy {
 
   toggleMobile(): void {
     this.mobileOpen.update((v) => !v);
+  }
+
+  toggleTheme(): void {
+    this.themeService.toggle();
   }
 
   scrollTo(id: string, event: Event): void {
