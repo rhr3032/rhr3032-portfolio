@@ -412,6 +412,7 @@
   "activities": [
     {
       "organization": "SOFTYSTA — Global UI/UX & Development Agency",
+      "organizationUrl": "https://softysta.com",
       "role": "Director of UX (Creative and Business Strategy)",
       "duration": "2025 – Present",
       "highlights": [
@@ -422,6 +423,7 @@
     },
     {
       "organization": "NUYsDev — Global Development Agency",
+      "organizationUrl": "https://nuysdev.com",
       "role": "CEO & Founder",
       "duration": "2019 – Present",
       "highlights": [
@@ -432,6 +434,7 @@
     },
     {
       "organization": "NUYsDZ!N — Global UI/UX Design Agency",
+      "organizationUrl": "https://nuysdzin.com",
       "role": "CEO & Founder",
       "duration": "2019 – Present",
       "highlights": [
@@ -461,6 +464,18 @@
       "publisher": "NUYsBlog — Global Blogs & Articles Publication (Tech & Creative)",
       "year": 2026,
       "hashnodeUrl": "https://nuysblog.hashnode.dev/nuysblog01"
-    }
+    },
+    {
+      "title": "The Art of CX Design: Crafting Exceptional Customer Experiences",
+      "publisher": "NUYsBlog — Global Blogs & Articles Publication (Tech & Creative)",
+      "year": 2025,
+      "hashnodeUrl": "https://nuysblog.hashnode.dev/nuysblog02"
+    },
+    {
+      "title": "The Future of UI/UX Design: Trends and Innovations",
+      "publisher": "NUYsBlog — Global Blogs & Articles Publication (Tech & Creative)",
+      "year": 2024,
+      "hashnodeUrl": "https://nuysblog.hashnode.dev/nuysblog03"
+    } 
   ]
 }

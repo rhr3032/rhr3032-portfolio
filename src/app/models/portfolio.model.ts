@@ -95,6 +95,7 @@ export interface Education {
 
 export interface Activity {
   organization: string;
+  organizationUrl?: string;
   role: string;
   /** Human-readable duration e.g. "Aug 2018 – Apr 2021" */
   duration: string;

@@ -101,6 +101,7 @@
 .entry-title--sm { font-size: clamp(1.15rem, 2vw, 1.55rem); line-height: 1.25; }
 .entry-at { color: var(--text-muted); font-style: normal; font-weight: 300; }
 .entry-org { color: var(--accent); }
+.entry-org:hover { border-bottom: 1px solid var(--accent); }
 
 .entry-points {
   list-style: none;

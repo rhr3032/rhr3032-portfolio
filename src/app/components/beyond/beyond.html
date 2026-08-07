@@ -26,7 +26,18 @@
                 <h3 class="entry-title">
                   {{ activity.role }}
                   <span class="entry-at"> — </span>
-                  <span class="entry-org">{{ activity.organization }}</span>
+                  @if (activity.organizationUrl) {
+                    <a
+                      class="entry-org"
+                      [href]="activity.organizationUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {{ activity.organization }}
+                    </a>
+                  } @else {
+                    <span class="entry-org">{{ activity.organization }}</span>
+                  }
                 </h3>
                 <ul class="entry-points">
                   @for (h of activity.highlights; track h) {
