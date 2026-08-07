@@ -1,59 +1,80 @@
-# NUYsRafi
+## Personal Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.3.
+Personal portfolio website for Raisul Rafi, a Lead UX/UI Designer & Frontend Developer. The site presents selected work, experience, education, skills, and contact details in a polished editorial layout built with Angular.
 
-## Development server
+Live site: https://rhr3032.vercel.app/
 
-To start a local development server, run:
+## About Me
 
-```bash
-ng serve
+I am Raisul Rafi, a passionate and versatile Lead UX/UI Designer and Frontend Developer with 5+ years of experience creating intuitive and visually engaging digital experiences. I focus on bridging design and development to deliver user-centered interfaces that are both functional and memorable.
+
+## Tech Stack
+
+- Angular 21
+- TypeScript
+- HTML and CSS
+- RxJS
+- Angular SSR
+- Tailwind CSS
+
+## Features
+
+- Responsive one-page portfolio experience
+- Smooth section navigation with mobile menu support
+- Hero, about, experience, education, projects, skills, blog, beyond, and contact sections
+- Dynamic portfolio content sourced from local JSON data
+- Theme toggle with persisted UI styling
+- Social and contact links for quick outreach
+
+## Project Structure
+
+```text
+public/
+	assets/
+		data/
+			portfolio.json
+
+src/
+	index.html
+	main.ts
+	main.server.ts
+	server.ts
+	styles.css
+	app/
+		app.ts
+		app.html
+		app.css
+		app.config.ts
+		app.config.server.ts
+		app.routes.ts
+		app.routes.server.ts
+		app.spec.ts
+		components/
+			about/
+			beyond/
+			blog/
+			contact/
+			education/
+			experience/
+			hero/
+			nav/
+			projects/
+			skills/
+		directives/
+			magnetic.directive.ts
+			scroll-reveal.directive.ts
+		models/
+			portfolio.model.ts
+		pages/
+			home/
+		services/
+			portfolio.service.ts
+			theme.service.ts
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Follow Me On
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of  schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Instagram: https://instagram.com/nuysdev
+- LinkedIn: https://linkedin.com/in/rhr3032
+- Behance: https://behance.net/rhr3032
+- Email: mailto:rhr3032@yahoo.com
