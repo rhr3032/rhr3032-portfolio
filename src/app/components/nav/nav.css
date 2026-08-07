@@ -154,8 +154,14 @@
 }
 
 .theme-toggle__sun {
+  color: var(--accent);
   opacity: 1;
   transform: scale(1) rotate(0deg);
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
 }
 .theme-toggle__moon {
   opacity: 0;
@@ -170,27 +176,13 @@
   transform: scale(1) rotate(0deg);
 }
 
-.sun-core {
-  position: absolute;
-  inset: 0.22rem;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 0 0 0.08rem rgba(255, 255, 255, 0.08);
+.theme-toggle__icon.is-dark .theme-toggle__sun {
+  color: var(--accent);
 }
-.sun-ray {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 0.12rem;
-  height: 0.28rem;
-  border-radius: 999px;
-  background: currentColor;
-  transform-origin: center -0.32rem;
+
+.theme-toggle__sun circle {
+  filter: drop-shadow(0 0 0.45rem color-mix(in srgb, var(--accent) 30%, transparent));
 }
-.sun-ray--1 { transform: translate(-50%, -50%) rotate(0deg) translateY(-0.42rem); }
-.sun-ray--2 { transform: translate(-50%, -50%) rotate(90deg) translateY(-0.42rem); }
-.sun-ray--3 { transform: translate(-50%, -50%) rotate(45deg) translateY(-0.42rem); }
-.sun-ray--4 { transform: translate(-50%, -50%) rotate(-45deg) translateY(-0.42rem); }
 
 .moon-disc {
   position: absolute;
