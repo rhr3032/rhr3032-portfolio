@@ -227,7 +227,7 @@
     {
       "name": "ArchiveVault - Enterprise Digital Archival Software",
       "description": "Developed ArchiveVault, a comprehensive enterprise digital archival software, using React.js and Tailwind CSS. The software provides a centralized solution for managing and preserving digital assets, with features for metadata management, search functionality, and compliance reporting. Implemented responsive design principles to ensure optimal performance across devices, enhancing the overall user experience for administrators and end-users.",
-      "technologies": ["React.js", "Tailwind CSS", "TypeScript", "JavaScript", "CSS3", "Framer Motion"],
+      "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "CSS3", "Framer Motion"],
       "category": "Dashboard",
       "image": "/public/assets/projects/project-04.png",
       "url": "https://archivevault3032.vercel.app/",
@@ -235,13 +235,13 @@
       "featured": true
     },
     {
-      "name": "Petitions Website UI Design",
-      "description": "Designed a modern and responsive landing page for a petition campaign using Figma and Adobe Photoshop. The design emphasized clear messaging, strong call-to-action buttons, and an engaging user interface to maximize conversion rates.",
-      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
-      "category": "UIUX Design",
-      "image": "/public/assets/projects/demo-5.png",
-      "url": "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
-      "github": "https://www.behance.net/gallery/241288649/Petition-Landing-Page-UI-Design",
+      "name": "HR Pulse - HR Management System",
+      "description": "Developed HR Pulse, a comprehensive HR management system, using React.js and Tailwind CSS. The system provides a centralized platform for managing employee data, attendance, payroll, and performance evaluations. Implemented responsive design principles to ensure optimal performance across devices, enhancing the overall user experience for HR professionals and employees.",
+      "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "CSS3", "Framer Motion"],
+      "category": "Dashboard",
+      "image": "/public/assets/projects/project-05.png",
+      "url": "https://hr-pulse-os.vercel.app/",
+      "github": "https://github.com/rhr3032/hr-pulse",
       "featured": true
     },
     {
