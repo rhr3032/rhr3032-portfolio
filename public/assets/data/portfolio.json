@@ -245,13 +245,13 @@
       "featured": true
     },
     {
-      "name": "AURA TRAVEL Mobile App UI Design",
-      "description": "Designed a mobile app UI for AURA TRAVEL, a travel agency, using Figma. The design focused on creating an intuitive and visually appealing user interface to enhance the user experience.",
-      "technologies": ["Figma", "FigJam", "Miro", "Adobe Photoshop"],
-      "category": "Mobile App",
-      "image": "/public/assets/projects/demo-1.png",
-      "url": "https://www.behance.net/gallery/249093991/AURA-TRAVEL-Mobile-App-UI-Design",
-      "github": "https://www.behance.net/gallery/249093991/AURA-TRAVEL-Mobile-App-UI-Design",
+      "name": "EduConsult - Educational Consultancy Website",
+      "description": "Developed EduConsult, an educational consultancy website, using Figma and Adobe Photoshop. The website features a modern and responsive design, providing information about the consultancy's services, team, and contact details. Implemented user-friendly navigation and engaging visuals to enhance the overall user experience and effectively communicate the consultancy's value proposition.",
+      "technologies": ["Next.js", "Tailwind CSS", "TypeScript", "JavaScript", "CSS3"],
+      "category": "Website",
+      "image": "/public/assets/projects/project-06.png",
+      "url": "https://educonsult3032.vercel.app/",
+      "github": "https://github.com/rhr3032/EduConsult",
       "featured": false
     },
     {
