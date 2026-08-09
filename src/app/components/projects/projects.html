@@ -158,8 +158,12 @@
 
         @if (filteredMoreProjects(data.projects).length) {
           <ul class="more-list" role="list">
-            @for (project of filteredMoreProjects(data.projects); track project.name) {
-              <li class="more-item">
+            @for (
+              project of filteredMoreProjects(data.projects);
+              track project.name + '-' + selectedCategory();
+              let i = $index
+            ) {
+              <li class="more-item" [style.animationDelay]="i * 70 + 'ms'">
                 <a
                   class="more-link"
                   [href]="project.url || project.github || '#'"
