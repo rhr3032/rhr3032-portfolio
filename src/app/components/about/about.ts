@@ -19,7 +19,7 @@ export class About {
 
   readonly stats: Stat[] = [
     { value: '5+',  label: 'Years of Experience' },
-    { value: '360+', label: 'Projects in flight' },
+    { value: '590+', label: 'Projects in flight' },
     { value: '95%',   label: 'Client satisfaction rate' },
     { value: '∞',   label: 'Cups of coffee' },
   ];

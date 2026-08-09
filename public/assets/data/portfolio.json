@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "Raisul Rafi",
-    "title": "Lead UX/UI Designer & Frontend Developer",
+    "title": "Lead Product Designer (UIUX) & Frontend Developer",
     "tagline": "I don't just build screens, I craft user experiences.",
     "bio": "I am a passionate and versatile Lead UX/UI Designer and Frontend Developer with over 5+ years of experience in creating intuitive and visually stunning digital experiences. With a strong foundation in both design principles and frontend technologies, I excel at bridging the gap between aesthetics and functionality. My expertise lies in crafting user-centered designs that not only captivate users but also drive business success. I thrive in collaborative environments, working closely with cross-functional teams to deliver innovative solutions that exceed client expectations. Whether it's designing engaging interfaces or implementing responsive web applications, I am dedicated to delivering exceptional results that leave a lasting impact.",
     "email": "rhr3032@yahoo.com",
@@ -28,7 +28,7 @@
         "Spearheaded the redesign of the flagship product, leading to a 30% increase in user engagement and a 25% boost in customer satisfaction",
         "Led a team of designers to create intuitive interfaces, resulting in a 30% increase in user engagement and a 25% boost in customer satisfaction"
       ],
-      "technologies": ["Figma", "Sketch", "Miro", "Notion", "Adobe Creative Suite", "Framer"]
+      "technologies": ["Figma", "Sketch", "Miro", "Notion", "Adobe Creative Suite", "Framer", "WordPress"]
     },
     {
       "company": "Ramotion",
@@ -42,7 +42,7 @@
         "Implemented innovative features such as AI-driven summarization tools and real-time 3D wellbore analysis components, resulting in enhanced reporting efficiency and interactive visualizations for stakeholders",
         "Collaborated with cross-functional teams to integrate advanced features, resulting in a 15% rise in overall sales revenue and a 20% reduction in inventory discrepancies, positively impacting the company's bottom line and enhancing customer satisfaction"
       ],
-      "technologies": ["Figma", "Framer", "Next.js", "Flutter", "Python", "Adobe Creative Suite"]
+      "technologies": ["Figma", "Framer", "Next.js", "Flutter", "Python", "Adobe Creative Suite", "Webflow"]
     },
     {
       "company": "UpWork",

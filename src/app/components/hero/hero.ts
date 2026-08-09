@@ -12,8 +12,8 @@ import { PortfolioService } from '../../services/portfolio.service';
 import { MagneticDirective } from '../../directives/magnetic.directive';
 
 const ROLE_PHRASES = [
-  'Lead UI/UX Designer',
-  'Product Designer',
+  'Lead Product Designer',
+  'UI/UX Designer',
   'Full-Stack Builder',
   'Cross-Platform Enthusiast',
   'Product Strategy Thinker',
