@@ -130,6 +130,7 @@
       "name": "rhr3032",
       "description": "Personal portfolio website built with Angular 21 and deployed on Cloudflare Workers. You're looking at it right now!",
       "technologies": ["Angular", "TypeScript", "Tailwind CSS", "Cloudflare Workers"],
+      "category": "Website",
       "url": "https://rhr3032.dev",
       "github": "https://github.com/rhr3032/rhr3032",
       "featured": true
@@ -138,6 +139,7 @@
       "name": "Side Project 2",
       "description": "A description of your side project goes here. Update this in portfolio.json or your Gist.",
       "technologies": ["Angular", "Node.js", "MongoDB"],
+      "category": "Dashboard",
       "url": "",
       "github": "",
       "featured": false
@@ -146,6 +148,7 @@
       "name": "Side Project 3",
       "description": "A description of your side project goes here. Update this in portfolio.json or your Gist.",
       "technologies": ["React", "TypeScript", "PostgreSQL"],
+      "category": "Mobile App",
       "url": "",
       "github": "",
       "featured": false

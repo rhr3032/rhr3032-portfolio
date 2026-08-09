@@ -142,9 +142,23 @@
           <span class="kicker">{{ nonFeaturedCount(data.projects) }} more</span>
         </div>
 
-        <ul class="more-list" role="list">
-          @for (project of data.projects ?? []; track project.name) {
-            @if (!project.featured) {
+        <div class="project-filters" role="group" aria-label="Filter projects by category">
+          @for (category of projectCategories; track category) {
+            <button
+              type="button"
+              class="project-filter"
+              [class.is-active]="selectedCategory() === category"
+              (click)="setCategory(category)"
+              [attr.aria-pressed]="selectedCategory() === category"
+            >
+              {{ category }}
+            </button>
+          }
+        </div>
+
+        @if (filteredMoreProjects(data.projects).length) {
+          <ul class="more-list" role="list">
+            @for (project of filteredMoreProjects(data.projects); track project.name) {
               <li class="more-item">
                 <a
                   class="more-link"
@@ -169,7 +183,8 @@
                   <span class="more-name">{{ project.name }}</span>
                   <span class="more-desc">{{ project.description }}</span>
                   <span class="more-meta">
-                    @for (tech of project.technologies.slice(0, 3); track tech) {
+                    <span class="project-category">{{ project.category }}</span>
+                    @for (tech of project.technologies.slice(0, 2); track tech) {
                       <span class="chip">{{ tech }}</span>
                     }
                   </span>
@@ -181,8 +196,12 @@
                 </a>
               </li>
             }
-          }
-        </ul>
+          </ul>
+        } @else {
+          <div class="more-empty" role="status" aria-live="polite">
+            No projects found for {{ selectedCategory() }}. Try another category.
+          </div>
+        }
       </div>
     }
   }

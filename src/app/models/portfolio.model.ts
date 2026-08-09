@@ -65,6 +65,7 @@ export interface Project {
   name: string;
   description: string;
   technologies: string[];
+  category: ProjectCategory;
   /** Live demo URL */
   url?: string;
   /** GitHub repository URL */
@@ -74,6 +75,8 @@ export interface Project {
   /** Whether this project is featured prominently */
   featured: boolean;
 }
+
+export type ProjectCategory = 'Website' | 'Dashboard' | 'Mobile App' | 'UIUX Design';
 
 export interface BlogPost {
   title: string;

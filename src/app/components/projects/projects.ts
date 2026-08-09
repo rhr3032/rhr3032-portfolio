@@ -13,7 +13,7 @@ import {
 import { AsyncPipe, isPlatformBrowser, NgOptimizedImage } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { PortfolioService } from '../../services/portfolio.service';
-import { Project } from '../../models/portfolio.model';
+import { Project, ProjectCategory } from '../../models/portfolio.model';
 
 /** Minimum pointer travel (px) that should disqualify a card click at drag-end. */
 const DRAG_CLICK_THRESHOLD_PX = 6;
@@ -28,11 +28,19 @@ export class Projects implements OnInit, OnDestroy {
   private readonly svc = inject(PortfolioService);
   private readonly isBrowser = isPlatformBrowser(inject(PLATFORM_ID));
   readonly portfolio$ = this.svc.portfolio$;
+  readonly projectCategories: readonly (ProjectCategory | 'All')[] = [
+    'All',
+    'Website',
+    'Dashboard',
+    'Mobile App',
+    'UIUX Design',
+  ];
 
   @ViewChild('rail') railRef?: ElementRef<HTMLElement>;
 
   readonly activeIndex = signal(0);
   readonly featuredCount = signal(0);
+  readonly selectedCategory = signal<ProjectCategory | 'All'>('All');
   readonly counter = computed(() => {
     const total = this.featuredCount();
     if (!total) return '00 / 00';
@@ -138,7 +146,19 @@ export class Projects implements OnInit, OnDestroy {
   }
 
   nonFeaturedCount(projects: Project[] | undefined): number {
-    return (projects ?? []).filter((p) => !p.featured).length;
+    return this.filteredMoreProjects(projects).length;
+  }
+
+  filteredMoreProjects(projects: Project[] | undefined): Project[] {
+    const category = this.selectedCategory();
+    return (projects ?? []).filter((project) => {
+      if (project.featured) return false;
+      return category === 'All' ? true : project.category === category;
+    });
+  }
+
+  setCategory(category: ProjectCategory | 'All'): void {
+    this.selectedCategory.set(category);
   }
 
   resolveImagePath(image?: string): string | null {
